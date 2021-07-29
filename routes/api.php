@@ -64,6 +64,10 @@ Route::group([
     Route::get('get_my_replies', 'GetReliesToWhatIPostedController@get_replies_to_what_i_posted');
     
     Route::apiresource('chats_reply','Chat_replyController');
+
+    //route to test websockets
+
+    Route::get('broadcast', 'InvokeNewMessageEventController@getNewMessage');
     
 }
 );
