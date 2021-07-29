@@ -1,5 +1,6 @@
 <?php
 
+use App\Events\NewMessage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FileController;
@@ -68,6 +69,8 @@ Route::group([
     //route to test websockets
 
     Route::get('broadcast', 'InvokeNewMessageEventController@getNewMessage');
+
+
     
 }
 );

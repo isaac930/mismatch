@@ -73,11 +73,11 @@ class AuthController extends Controller
     $image = $request->file('file');
     $new_name = rand().'.'.$image->getClientOriginalExtension();
 
-    //$image->move(public_path('/uploads/users/'),$new_name);
+    $image->move(public_path('/uploads/users/'),$new_name);
 
-    $filePath = 'users/' . $new_name;
+    // $filePath = 'users/' . $new_name;
 
-    Storage::disk('s3')->put($filePath, file_get_contents($image));
+    // Storage::disk('s3')->put($filePath, file_get_contents($image));
       
     $user = new User;
     $user->name = $request->name;

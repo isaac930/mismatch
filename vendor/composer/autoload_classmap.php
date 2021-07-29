@@ -7,8 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
-    'App\\Events\\TaskAddTwoNumbersEvent' => $baseDir . '/app/Events/TaskAddTwoNumbersEvent.php',
-    'App\\Events\\TaskEvent' => $baseDir . '/app/Events/TaskEvent.php',
+    'App\\Events\\NewMessage' => $baseDir . '/app/Events/NewMessage.php',
     'App\\Exceptions\\ExceptionTrait' => $baseDir . '/app/Exceptions/ExceptionTrait.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\AdminGellAllChatsController' => $baseDir . '/app/Http/Controllers/AdminGellAllChatsController.php',
@@ -25,6 +24,7 @@ return array(
     'App\\Http\\Controllers\\GetReliesToWhatIPostedController' => $baseDir . '/app/Http/Controllers/GetReliesToWhatIPostedController.php',
     'App\\Http\\Controllers\\GetUserAvatarController' => $baseDir . '/app/Http/Controllers/GetUserAvatarController.php',
     'App\\Http\\Controllers\\GetallUserAvatarsController' => $baseDir . '/app/Http/Controllers/GetallUserAvatarsController.php',
+    'App\\Http\\Controllers\\InvokeNewMessageEventController' => $baseDir . '/app/Http/Controllers/InvokeNewMessageEventController.php',
     'App\\Http\\Controllers\\ProfilesController' => $baseDir . '/app/Http/Controllers/ProfilesController.php',
     'App\\Http\\Controllers\\Register_Admin_Users' => $baseDir . '/app/Http/Controllers/Register_Admin_Users.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',

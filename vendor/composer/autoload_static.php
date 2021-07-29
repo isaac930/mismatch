@@ -785,8 +785,7 @@ class ComposerStaticInit9e84596e18aabefe46482a80ef4c6638
 
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
-        'App\\Events\\TaskAddTwoNumbersEvent' => __DIR__ . '/../..' . '/app/Events/TaskAddTwoNumbersEvent.php',
-        'App\\Events\\TaskEvent' => __DIR__ . '/../..' . '/app/Events/TaskEvent.php',
+        'App\\Events\\NewMessage' => __DIR__ . '/../..' . '/app/Events/NewMessage.php',
         'App\\Exceptions\\ExceptionTrait' => __DIR__ . '/../..' . '/app/Exceptions/ExceptionTrait.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\AdminGellAllChatsController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminGellAllChatsController.php',
@@ -803,6 +802,7 @@ class ComposerStaticInit9e84596e18aabefe46482a80ef4c6638
         'App\\Http\\Controllers\\GetReliesToWhatIPostedController' => __DIR__ . '/../..' . '/app/Http/Controllers/GetReliesToWhatIPostedController.php',
         'App\\Http\\Controllers\\GetUserAvatarController' => __DIR__ . '/../..' . '/app/Http/Controllers/GetUserAvatarController.php',
         'App\\Http\\Controllers\\GetallUserAvatarsController' => __DIR__ . '/../..' . '/app/Http/Controllers/GetallUserAvatarsController.php',
+        'App\\Http\\Controllers\\InvokeNewMessageEventController' => __DIR__ . '/../..' . '/app/Http/Controllers/InvokeNewMessageEventController.php',
         'App\\Http\\Controllers\\ProfilesController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProfilesController.php',
         'App\\Http\\Controllers\\Register_Admin_Users' => __DIR__ . '/../..' . '/app/Http/Controllers/Register_Admin_Users.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',

@@ -2,18 +2,17 @@
 
 namespace App\Listeners;
 
-use App\Events\TaskAddTwoNumbersEvent;
-use Illuminate\Contracts\Queue\ShouldQueue;
+use App\Events\NewMessage;
 use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Contracts\Queue\ShouldQueue;
 
-class TaskAddTwoNumbersEventListener
+class NewMessageEventListener
 {
     /**
      * Create the event listener.
      *
      * @return void
      */
-    
     public function __construct()
     {
         //
@@ -22,14 +21,11 @@ class TaskAddTwoNumbersEventListener
     /**
      * Handle the event.
      *
-     * @param  TaskAddTwoNumbersEvent  $event
+     * @param  object  $event
      * @return void
      */
-    public function handle(TaskAddTwoNumbersEvent $event)
+    public function handle(NewMessage $event)
     {
-        
-       dd($event);
-       
-      
+        return $event;
     }
 }

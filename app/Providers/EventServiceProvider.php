@@ -21,16 +21,8 @@ class EventServiceProvider extends ServiceProvider
     // ];
 
     protected $listen = [
-        'App\Events\TaskEvent' =>[
-            'App\Listeners\TaskEventListener',
-        ],
-
-        'App\Events\TaskAddTwoNumbersEvent' =>[
-            'App\Listeners\TaskAddTwoNumbersEventListener',
-        ],
-
-        'App\Events\SendEmailEvent' =>[
-            'App\Listeners\TaskSendEmailEventListener',
+        'App\Events\NewMessage' =>[
+            'App\Listeners\NewMessageEventListener',
         ],
 
     ];
