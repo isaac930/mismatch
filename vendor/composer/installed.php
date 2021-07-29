@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '9a8a16698273b721fe6bfe29a1a79dfc9253fbdb',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -494,12 +494,12 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '9a8a16698273b721fe6bfe29a1a79dfc9253fbdb',
             'dev_requirement' => false,
         ),
         'laravel/nexmo-notification-channel' => array(
@@ -1051,12 +1051,12 @@
             'dev_requirement' => false,
         ),
         'pusher/pusher-php-server' => array(
-            'pretty_version' => '5.0.3',
-            'version' => '5.0.3.0',
+            'pretty_version' => 'v3.3.1',
+            'version' => '3.3.1.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../pusher/pusher-php-server',
             'aliases' => array(),
-            'reference' => '1024077ff60beebaf5706b4e0208a1e648d20cf4',
+            'reference' => '2279bcd21a608a76f9be1fe0675aa2dd1efb2fa0',
             'dev_requirement' => false,
         ),
         'ralouphie/getallheaders' => array(

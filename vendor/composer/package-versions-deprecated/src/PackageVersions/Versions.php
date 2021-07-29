@@ -95,7 +95,7 @@ final class Versions
   'psr/log' => '1.1.4@d49695b909c3b7628b6289db5479a1c204601f11',
   'psr/simple-cache' => '1.0.1@408d5eafb83c57f6365a3ca330ff23aa4a5fa39b',
   'psy/psysh' => 'v0.10.8@e4573f47750dd6c92dca5aee543fa77513cbd8d3',
-  'pusher/pusher-php-server' => '5.0.3@1024077ff60beebaf5706b4e0208a1e648d20cf4',
+  'pusher/pusher-php-server' => 'v3.3.1@2279bcd21a608a76f9be1fe0675aa2dd1efb2fa0',
   'ralouphie/getallheaders' => '3.0.3@120b605dfeb996808c31b6477290a714d356e822',
   'ramsey/collection' => '1.1.3@28a5c4ab2f5111db6a60b2b4ec84057e0f43b9c1',
   'ramsey/uuid' => '4.1.1@cd4032040a750077205918c86049aa0f43d22947',
@@ -194,7 +194,7 @@ final class Versions
   'sebastian/type' => '2.3.4@b8cd8a1c753c90bc1a0f5372170e3e489136f914',
   'sebastian/version' => '3.0.2@c6c1022351a901512170118436c764e473f6de8c',
   'theseer/tokenizer' => '1.2.0@75a63c33a8577608444246075ea0af0d052e452a',
-  'laravel/laravel' => '1.0.0+no-version-set@',
+  'laravel/laravel' => 'dev-master@9a8a16698273b721fe6bfe29a1a79dfc9253fbdb',
 );
 
     private function __construct()
