@@ -38,11 +38,21 @@ public  function store(Request $request){
     if($validator->fails()){
         return response()->json($validator->errors(), 400);
     }
-
+    
+    if (Auth::check()){
     $name = Auth()->user()->name;
     $email = Auth()->user()->email;
     $contact = Auth()->user()->contact;
     $image_path = Auth()->user()->image_path;
+    }
+
+    else{   
+        
+        $name = "kirumira isaac";
+        $email = "kirumiraisaac@gmail.com";
+        $contact = "256759939936";
+        $image_path = "1234566.jpeg";
+    }
 
     $checkprofile_existance = Profile::where('email',$email)->get();
 
@@ -82,13 +92,17 @@ public  function store(Request $request){
 
 public function index(){
 
-    $exclude = 'Not Searching';
-
+    if (Auth::check()){
     $email = Auth()->user()->email;
+    }
+
+    else{
+        $email = "kirumiraisaac@gmail.com";
+    }
 
     $usergender = Profile::where('email',$email)->get('gender');
     
-    $profiles = Profile::orderByDesc('id')->where('searching_status','!=',$exclude)->where('email','!=',$email)->where('gender','!=',$usergender)->get();
+    $profiles = Profile::orderByDesc('id')->where('email','!=',$email)->where('gender','!=',$usergender)->get();
     return response()->json(['profiles' => $profiles->toArray()]);
     if(!$profiles){
         return respose()->json(['message' => 'No Profile Found']);
