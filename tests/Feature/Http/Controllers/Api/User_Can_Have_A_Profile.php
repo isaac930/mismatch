@@ -12,7 +12,6 @@ class User_Can_Have_A_Profile extends TestCase
   
   // use RefreshDatabase;
 
-  //i will enable the above code later
 
   /** @test */
     public function a_user_can_have_a_profile()
