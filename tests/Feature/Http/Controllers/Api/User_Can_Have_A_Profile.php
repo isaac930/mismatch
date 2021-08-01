@@ -9,8 +9,10 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class User_Can_Have_A_Profile extends TestCase
 {
-  //this code below will reset our database when ever a taste passes
+  
   // use RefreshDatabase;
+
+  //i will enable the above code later
 
   /** @test */
     public function a_user_can_have_a_profile()
