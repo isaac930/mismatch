@@ -168,7 +168,7 @@ public function update(Request $request, $id){
 
 
 }
-
+//destroy profile
 public function destroy($id){
     try{
 
