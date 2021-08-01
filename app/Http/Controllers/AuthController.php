@@ -63,7 +63,7 @@ class AuthController extends Controller
       if(!$request->hasFile('file')) {
         return response()->json(['Upload_file_not_found, You Must Upload A File'], 400);
     }
-
+     //allowed file extensions
     $allowedfileExtension=['jpg','png','jpeg'];
 
     $extension = $request->file('file')->getClientOriginalExtension();
